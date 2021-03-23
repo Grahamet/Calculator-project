@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="10"
+    android:weightSum="9"
     tools:context=".MainActivity">
 
 
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="0dp"
-    android:layout_weight="2">
+    android:layout_weight="1">
 
     <TextView
         android:id="@+id/viewCalc"
@@ -20,12 +20,12 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:hint="Enter Numbers"
-        android:textSize="34sp" />
+        android:textSize="30sp" />
 
 </RelativeLayout>
 
     <GridLayout
-        android:columnCount="4"
+        android:columnCount="5"
         android:rowCount="5"
         android:alignmentMode="alignMargins"
         android:padding="15dp"
@@ -58,7 +58,7 @@
                     android:layout_height="wrap_content"
                     android:text="C"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:text="CE"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -124,7 +124,7 @@
                     android:layout_height="wrap_content"
                     android:text="+/-"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -157,7 +157,40 @@
                     android:layout_height="wrap_content"
                     android:text="/"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Row 1, column 5-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sqr"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X^2"
+                    android:textAlignment="center"
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -191,7 +224,7 @@
                     android:layout_height="wrap_content"
                     android:text="7"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -224,7 +257,7 @@
                     android:layout_height="wrap_content"
                     android:text="8"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -257,7 +290,7 @@
                     android:layout_height="wrap_content"
                     android:text="9"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -290,7 +323,40 @@
                     android:layout_height="wrap_content"
                     android:text="+"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Row 2, column 5-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sqroot"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="√X"
+                    android:textAlignment="center"
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -324,7 +390,7 @@
                     android:layout_height="wrap_content"
                     android:text="4"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -357,7 +423,7 @@
                     android:layout_height="wrap_content"
                     android:text="5"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -390,7 +456,7 @@
                     android:layout_height="wrap_content"
                     android:text="6"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -423,7 +489,40 @@
                     android:layout_height="wrap_content"
                     android:text="-"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Row 4, column 5-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/third"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X^3"
+                    android:textAlignment="center"
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -457,7 +556,7 @@
                     android:layout_height="wrap_content"
                     android:text="1"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -490,7 +589,7 @@
                     android:layout_height="wrap_content"
                     android:text="2"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -523,7 +622,7 @@
                     android:layout_height="wrap_content"
                     android:text="3"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -556,7 +655,40 @@
                     android:layout_height="match_parent"
                     android:text="*"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Row 4, column 5-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ten"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10^X"
+                    android:textAlignment="center"
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -590,7 +722,7 @@
                     android:layout_height="wrap_content"
                     android:text="0"
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -624,7 +756,7 @@
                     android:layout_height="wrap_content"
                     android:text="."
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
 
                 </TextView>
 
@@ -657,13 +789,17 @@
                     android:layout_height="wrap_content"
                     android:text="="
                     android:textAlignment="center"
-                    android:textSize="16sp">
+                    android:textSize="10sp">
 
                 </TextView>
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
+
+
+
 
 
 
